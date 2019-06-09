@@ -1,4 +1,4 @@
-# `estuff`
+# [`estuff`](https://github.com/Pouriya-Jahanbakhsh/estuff)
 Erlang [rebar3](https://rebar3.org) template for making new Erlang/OTP project.
 
 
