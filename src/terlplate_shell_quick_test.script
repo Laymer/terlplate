@@ -1,0 +1,4 @@
+% {{header_comment}}
+
+% Have a quick test in 'make shell' using test().
+application:start('{{name}}').

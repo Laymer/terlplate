@@ -1,0 +1,47 @@
+{ application , {{name}} , [
+    {description , "{{description}}"} ,
+    {vsn , "0.1.0"} ,
+
+    {registered , [{{name}}
+        , {{name}}_app
+        , {{name}}_sup
+        , {{name}}_utils
+    ]} ,
+
+    {mod , {achlys_app , []}} ,
+    {applications , [kernel
+        ,            stdlib
+        ,            grisp
+    ]} ,
+
+    {env , []} ,
+    {modules , [
+          {{name}}
+        , {{name}}_app
+        , {{name}}_sup
+        , {{name}}_utils
+    ]} ,
+
+    {licenses , ["Apache 2.0"]} ,
+
+    {maintainers , [
+        "{{email}}"
+    ]} ,
+
+    {links , [
+          {"Achlys" , "{{link}}"}
+        , {"Github" , "https://github.com/Laymer/{{name}}"}
+        , {"GRiSP" , "https://www.grisp.org"}
+        , {"LightKone" , "https://lightkone.eu/"}
+    ]} ,
+
+    {files , ["LICENSE"
+        ,     "README.md"
+        ,     "rebar.lock"
+        ,     "src"
+        ,     "grisp"
+        ,     "priv"
+        ,     "Makefile"
+    ]} ,
+    {build_tools , ["rebar3"]}
+]}.

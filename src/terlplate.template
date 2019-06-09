@@ -1,0 +1,51 @@
+{description, "OTP Application."}.
+
+{variables, [{name, "terlplate", "Name of the OTP application"}
+            ,{author, "Igor Kopestenski", "Author's full name for this application."}
+            ,{email, "igor.kopestenski@uclouvain.be", "Author's email for this application."}
+            ,{link, "https://ikopest.me", "Author's email for this application."}
+            ,{description, "An OTP application", "One line description for this application."}
+            ,{rtems, "/Path/To", "Absolute path up to this point for the GRiSP toolchain."}
+            ,{header_comment, "For further information about the original skeleton template please visit https://github.com/Pouriya-Jahanbakhsh/terlplate", "Comment for each auto generated file"}]}.
+
+{template, "terlplate.erl", "{{name}}/src/{{name}}.erl"}.
+
+{template, "terlplate_app.erl", "{{name}}/src/{{name}}_app.erl"}.
+
+{template, "terlplate_sup.erl", "{{name}}/src/{{name}}_sup.erl"}.
+
+{template, "terlplate_app.src", "{{name}}/src/{{name}}.app.src"}.
+
+{template, "terlplate_utils.erl", "{{name}}/src/{{name}}_utils.erl"}.
+
+{template, "terlplate_rebar.config", "{{name}}/rebar.config"}.
+
+{template, "terlplate_rebar.config.script", "{{name}}/rebar.config.script"}.
+
+{template, "terlplate_sys.config", "{{name}}/config/sys.config"}.
+
+{template, "terlplate_vm.args", "{{name}}/config/vm.args"}.
+
+{template, "terlplate_LICENSE", "{{name}}/LICENSE"}.
+
+{template, "terlplate_README.md", "{{name}}/README.md"}.
+
+{template, "terlplate_Makefile.mk", "{{name}}/Makefile"}.
+
+{file, "terlplate_rebar3", "{{name}}/tools/rebar3"}.
+
+{chmod, "{{name}}/tools/rebar3", 8#755}.
+
+{template, "terlplate_user_default.erl", "{{name}}/tools/user_default.erl"}.
+
+{template, "terlplate_test.erl", "{{name}}/test/{{name}}_SUITE.erl"}.
+
+{template, "terlplate_include.hrl", "{{name}}/include/{{name}}.hrl"}.
+
+{template, "terlplate_coverage_summary.awk", "{{name}}/tools/coverage_summary.awk"}.
+
+{template, "terlplate_shell_quick_test.script", "{{name}}/test/shell_quick_test.script"}.
+
+{template, "terlplate_Dockerfile", "{{name}}/Dockerfile"}.
+
+{dir, "{{name}}/priv"}.
